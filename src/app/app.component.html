@@ -1,0 +1,20 @@
+
+<div class="row">
+  <div class="col-6">
+      <label class="form-label" for="">Pon tus grados aquí</label>
+      <input type="text" class="form-control" [(ngModel)]="num1" name="num1" placeholder="Grados">
+  </div>
+</div>
+
+<div class="mb-3">
+  <button (click)="calcular() " class="btn btn-primary">Calcular</button>
+</div>
+<div>
+  <input type="radio" id="centigrados" [(ngModel)]="operacion" name="operacion" [value]="'centigrados'" />
+  <label for="centigrados">Centigrados</label>
+  <input type="radio" id="faren" [(ngModel)]="operacion" name="operacion" [value]="'faren'" />
+  <label for="faren">Fahrenheit</label>
+</div>
+<div class="col-6">
+  <h2>Resultado es: {{resultado}}</h2>
+</div>
