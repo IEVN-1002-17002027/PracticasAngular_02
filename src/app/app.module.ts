@@ -1,16 +1,27 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+
+
+import { AppComponent } from './app.component';
+import { TemperaturaComponent } from './temperatura/temperatura.component';
+import { ExponenteComponent } from './exponente/exponente.component';
+import { MenuComponent } from './menu/menu/menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material/material.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TemperaturaComponent,
+    ExponenteComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
