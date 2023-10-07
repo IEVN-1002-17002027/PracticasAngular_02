@@ -1,0 +1,24 @@
+/* styles.css */
+.resultado-card {
+    background-color: #0056b3; 
+    color: #fff; 
+  }
+
+body {
+  background-image: url('https://assets.change.org/photos/6/hz/gl/RhhzgLuhjgGOZIH-1600x900-noPad.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-color: #0056b3; 
+  color: #fff; 
+}
+
+.formulario {
+  background-color: #0056b3; /* Azul más oscuro */
+  color: #fff; /* Texto en blanco */
+  padding: 20px; /* Espacio interno del formulario */
+}
+
+html {
+
+    color: #fff; 
+  }

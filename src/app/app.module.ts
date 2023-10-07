@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 import { AppComponent } from './app.component';
+
 import { TemperaturaComponent } from './temperatura/temperatura.component';
 import { ExponenteComponent } from './exponente/exponente.component';
 import { MenuComponent } from './menu/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
+import { CinepolisComponent } from './cinepolis/cinepolis.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { MaterialModule } from './material/material/material.module';
     TemperaturaComponent,
     ExponenteComponent,
     MenuComponent,
+    CinepolisComponent,
   ],
   imports: [
     BrowserModule,

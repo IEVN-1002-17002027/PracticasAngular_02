@@ -1,0 +1,59 @@
+
+<head>
+  <link rel="stylesheet" href="cinepolis.component.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+        <!-- Formulario -->
+        <div class="card formulario" style="max-width: 400px; margin: 0 auto;">
+          
+          <div class="card-header">Formulario de Compra</div>
+          <div class="card-body">
+
+
+
+            <div class="mb-3">
+              <label class="form-label" for="">Nombre</label>
+              <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre" placeholder="Nombre">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="">Número de compradores</label>
+              <input type="text" class="form-control" [(ngModel)]="compradores" name="compradores" placeholder="Compradores">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="">Tarjeta Cinepolis</label>
+              <div class="mb-2"> 
+                <input type="radio" id="si" name="operacion" [(ngModel)]="tarjeta" value="si">
+                <label for="si"> Si </label>
+              </div>
+              <div> 
+                <input type="radio" id="no" name="operacion" [(ngModel)]="tarjeta" value="no">
+                <label for="no"> No </label>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="">Cantidad de boletos</label>
+              <input type="text" class="form-control" [(ngModel)]="boletos" name="boletos" placeholder="Boletos">
+            </div>
+            <div class="mb-3">
+              <button (click)="pagar()" class="btn btn-primary">Pagar</button>
+            </div>
+            <div class="mb-3">
+              <button (click)="borrarDatos()" class="btn btn-danger">Borrar Datos</button>
+            </div>
+        <!-- Datos de compra -->
+
+            <h2>Datos de compra:</h2>
+            <div>Total a pagar: {{ total | currency: 'USD' }}</div>
+            <div>Nombre del comprador: {{ nombre }}</div>
+            <div>Número de compradores: {{ compradores }}</div>
+            <div>{{ mensajeDescuento }}</div>
+            <div>{{ mensajeLimiteBoletos }}</div>
+          </div>
+      </div>
+</body>
+ 
